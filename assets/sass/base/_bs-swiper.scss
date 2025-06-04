@@ -1,0 +1,68 @@
+.bs-swiper {
+    .card-slider {
+        position: static;
+
+        .card-pagination {
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: rgba(221, 221, 221, 1);
+                opacity: 1;
+
+                &.swiper-pagination-bullet-active {
+                    background: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+
+        .navigation-btn {
+            opacity: 0;
+            visibility: hidden;
+            transition: ease .5s all;
+
+            .custom-prev {
+                &::after {
+                    content: none;
+                }
+
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: rotate(180deg);
+
+                    &::before {
+                        font-size: 10px;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .custom-next {
+                &::after {
+                    content: none;
+                }
+
+                .icon {
+                    width: 24px;
+                    height: 24px;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &::before {
+                        font-size: 10px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+/*
+  @Author : Yogesh More
+  @Project : 
+  @Dev : Yogesh More
+  @Date : ;
+*/
+
+// Core variables and mixins
+
+@import "plugins/bootstrap/bootstrap.scss";
+// @import "plugins/bootstrap/accordion";
+// @import "plugins/bootstrap/alert";
+// @import "plugins/bootstrap/badge";
+// @import "plugins/bootstrap/breadcrumb";
+// @import "plugins/bootstrap/button-group";
+// @import "plugins/bootstrap/buttons";
+// @import "plugins/bootstrap/card";
+// @import "plugins/bootstrap/carousel";
+// @import "plugins/bootstrap/close";
+// @import "plugins/bootstrap/containers";
+@import "plugins/bootstrap/dropdown";
+// @import "plugins/bootstrap/forms";
+// @import "plugins/bootstrap/functions";
+// @import "plugins/bootstrap/grid";
+// @import "plugins/bootstrap/helpers";
+// @import "plugins/bootstrap/images";
+// @import "plugins/bootstrap/list-group";
+// @import "plugins/bootstrap/mixins";
+// @import "plugins/bootstrap/modal";
+// @import "plugins/bootstrap/nav";
+// @import "plugins/bootstrap/navbar";
+// @import "plugins/bootstrap/offcanvas";
+@import "plugins/bootstrap/pagination";
+// @import "plugins/bootstrap/popover";
+// @import "plugins/bootstrap/progress";
+// @import "plugins/bootstrap/reboot";
+// @import "plugins/bootstrap/root";
+// @import "plugins/bootstrap/spinners";
+// @import "plugins/bootstrap/tables";
+// @import "plugins/bootstrap/transitions";
+// @import "plugins/bootstrap/toasts";
+// @import "plugins/bootstrap/tooltip";
+// @import "plugins/bootstrap/type";
+// @import "plugins/bootstrap/utilities";
+// @import "plugins/bootstrap/variables";
+
+
+
+// @import "plugins/bootstrap/forms/floating-labels";
+
+
+/*font awesome 5.7.1*/
+
+// @import "fonts/font";
+
+/* config */
+
+@import "config/mixin";
+@import "config/variables";
+
+
+/* common */
+
+@import "common/common";
+
+/* base include */
+
+@import "base/bs-header";
+@import "base/bs-btn";
+@import "base/bs-filter-box-wrapper";
+@import "base/bs-card-box";
+@import "base/bs-swiper";
+@import "base/bs-grid-box";
+@import "base/bs-flex-box";
+// @import "base/bs-card";
+// @import "base/bs-list";
+// @import "base/bs-footer";
+// @import "base/bs-leaders";
+// @import "base/bs-banner";
+// @import "base/bs-modal";
+// @import "base/bs-form";
+// @import "base/bs-grid";
+// @import "base/bs-box";
+// @import "base/bs-pagination";
+// @import "base/bs-circle-animation";
+
+/* layout */
+@import "layout/lyt-section";
+
+
+/* pages */
+
+
+/* modules */
+// @import "module/mod-management";
+@import "module/mod-research";
+
+
+
+/* plugins */
+@import "plugins/swiper/swiper-bundle.min.scss";
+// @import "plugins/menu.scss";
+// @import "plugins/manific/magnific.scss";
+@import "plugins/wow/animate.scss";
+
+// fonts
+@import "fonts/fonts";
+
+
+

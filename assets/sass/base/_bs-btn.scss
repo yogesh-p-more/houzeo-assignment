@@ -1,0 +1,15 @@
+.bs-btn{
+    background: linear-gradient(270deg, #0E5293 0%, #2876C1 97.2%);
+    padding: 12px 19.2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #FFFFFF;
+    display: inline-flex;
+    border-radius: 10px;
+
+    &:hover{
+         color: #FFFFFF;
+        background: linear-gradient(270deg, #2876C1 0%, #0E5293 97.2%);
+    }
+}

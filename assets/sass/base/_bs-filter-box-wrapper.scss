@@ -1,0 +1,143 @@
+.bs-filter-box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    grid-gap: 16px;
+    padding: 16px 0;
+
+    .search-box {
+        background: linear-gradient(90deg, #2876C1 0%, #0E5293 100%);
+        padding: 2px;
+        border-radius: 500px;
+
+        .search-box-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFFFFF;
+            padding: 6px 8px;
+            border-radius: 100px;
+
+            input {
+                padding: 2px 16px;
+            }
+
+            .button-wrapper {
+                display: flex;
+                align-items: center;
+                grid-gap: 18px;
+
+
+                .clear-icon {
+                    .icon {
+                        &::before {
+                            font-size: 11px;
+                            color: rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .for-sell-box {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        transition: ease .5s all;
+        position: relative;
+
+        &::after{
+            content: "\e905";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+            font-family: "icomoon";
+            font-size: 11px;
+            pointer-events: none;
+        }
+
+        select {
+            padding: 12.5px 16px;
+            min-width: 152px;
+            font-size: 14px;
+            font-weight: 600;
+
+            option {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+
+        &:hover {
+            border: 1px solid rgba(11, 90, 165, 1);
+            background: rgba(243, 247, 250, 1);
+
+            select {
+                option {
+                    color: #0B5AA5;
+                }
+            }
+        }
+    }
+
+    .filter-box {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        transition: ease .5s all;
+
+        button {
+            padding: 12.5px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: ease .5s all;
+
+            .icon {
+                margin-right: 12px;
+
+                &::before {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &:hover {
+            border: 1px solid rgba(11, 90, 165, 1);
+            background: rgba(243, 247, 250, 1);
+
+            button {
+                color: #0B5AA5;
+            }
+        }
+    }
+
+    .saved-box {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        transition: ease .5s all;
+
+        button {
+            padding: 12.5px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: ease .5s all;
+
+            .icon {
+                margin-right: 12px;
+
+                &::before {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &:hover {
+            border: 1px solid rgba(11, 90, 165, 1);
+            background: rgba(243, 247, 250, 1);
+
+            button {
+                color: #0B5AA5;
+            }
+        }
+    }
+}

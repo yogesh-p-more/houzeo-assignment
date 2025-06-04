@@ -1,0 +1,12 @@
+.bs-grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+@media (max-width:$mobile-breakpoint) {
+    .bs-grid-box {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
