@@ -29,6 +29,7 @@ button {
     box-shadow: none;
     background: none;
     appearance: none;
+    cursor: pointer;
 
     &:focus {
         outline: none;
@@ -62,6 +63,37 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+/* Preloader full-screen overlay */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* or any background color */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner animation */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0B5AA5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 

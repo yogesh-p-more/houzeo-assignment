@@ -14,10 +14,11 @@
     .rightBox {
         width: 100%;
         max-width: 706px;
-        height: 100%;
+        height: calc(100vh - 151px);
         overflow-y: auto;
         overflow-x: hidden;
         padding: 24px 0;
+        scrollbar-width: none; /* Firefox */
 
 
         .title {
@@ -39,6 +40,7 @@
             display: flex;
             align-items: center;
             grid-gap: 10px;
+            
 
             .sortby {
                 font-size: 14px;
@@ -72,54 +74,53 @@
                 }
             }
         }
+
+        .bs-grid-box{
+            // height: 2000px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari */
+        }
     }
 }
 
-@media (max-width:$tablet-breakpoint) {
+@media (max-width:1025px) {
     .bs-flex-box {
-   
+        justify-content: center;
 
-    .leftBox {
-     display: none;
-    }
-
-    .rightBox {
-        width: 100%;
-        max-width: 706px;
-        height: 100%;
-        overflow-y: auto;
-        overflow-x: hidden;
-        padding: 24px 0;
-
-
-        .title {
-           
+        .leftBox {
+            display: none;
         }
 
-        .count {
-         
-        }
+        .rightBox {
+            width: 100%;
+            max-width: 706px;
+            height: calc(100vh - 216px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 24px 0;
 
-        .sortingBox {
-          
-            .sortby {
-               
-            }
 
-            .sorting-select {
-             
+            .title {}
 
-                &::after {
-                   
-                }
+            .count {}
 
-                .select-field {
-                   
+            .sortingBox {
+
+                .sortby {}
+
+                .sorting-select {
+
+
+                    &::after {}
+
+                    .select-field {}
                 }
             }
         }
     }
-}
 }
 
 

@@ -20,6 +20,7 @@
 
             input {
                 padding: 2px 16px;
+                width: 100%;
             }
 
             .button-wrapper {
@@ -40,6 +41,10 @@
         }
     }
 
+    .filter-box-icon-mob {
+        display: none;
+    }
+
     .for-sell-box {
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 8px;
@@ -47,7 +52,7 @@
         transition: ease .5s all;
         position: relative;
 
-        &::after{
+        &::after {
             content: "\e905";
             position: absolute;
             top: 50%;
@@ -137,6 +142,354 @@
 
             button {
                 color: #0B5AA5;
+            }
+        }
+    }
+}
+
+@media (max-width:1025px) {
+     .bs-filter-box-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .search-box {
+            max-width: 600px;
+            width: 100%;
+
+            .search-box-wrapper {
+
+
+                input {}
+
+                .button-wrapper {
+                    .clear-icon {
+                        .icon {
+                            &::before {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .for-sell-box {
+
+             &.typ-property-box {
+                display: none;
+            }
+
+            &.typ-bed-box {
+                display: none;
+            }
+
+            &.for-sell-box-main {
+                flex-grow: 2;
+                select {
+                    max-width: 96px;
+                    min-width: 96px;
+                    font-size: 12px;
+                }
+
+            }
+
+            &.typ-price-box {
+                flex-grow: 2;
+                select {
+                    max-width: 96px;
+                    min-width: auto;
+                    font-size: 12px;
+                }
+
+            }
+
+
+            &::after {}
+
+            select {
+
+
+                option {}
+            }
+
+            &:hover {
+
+
+                select {
+                    option {}
+                }
+            }
+        }
+         .filter-box-icon-mob {
+            display: block;
+            position: relative;
+
+            .number {
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                top: 0;
+                right: 0;
+                background: #0B5AA5;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 8px;
+                font-weight: 500;
+                line-height: 1;
+                color: #FFFFFF;
+            }
+        }
+
+        .filter-box {
+            display: none;
+
+            button {
+
+
+                .icon {
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+                button {}
+            }
+        }
+
+        .saved-box {
+            border: none;
+
+
+            button {
+                background: #0B5AA5;
+                border-radius: 500px;
+                color: #FFFFFF;
+                min-width: 104px;
+
+                .icon {
+                    display: none;
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+
+                button {}
+            }
+        }
+    }
+}
+
+@media (max-width:$mobile-breakpoint) {
+   
+    .bs-filter-box-wrapper {
+        flex-wrap: wrap;
+
+        .search-box {
+            max-width: 304px;
+
+            .search-box-wrapper {
+
+
+                input {}
+
+                .button-wrapper {
+                    .clear-icon {
+                        .icon {
+                            &::before {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .filter-box-icon-mob {
+            display: block;
+            position: relative;
+
+            .number {
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                top: 0;
+                right: 0;
+                background: #0B5AA5;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 8px;
+                font-weight: 500;
+                line-height: 1;
+                color: #FFFFFF;
+            }
+        }
+
+
+
+        .for-sell-box {
+
+            &.typ-property-box {
+                display: none;
+            }
+
+            &.typ-bed-box {
+                display: none;
+            }
+
+            &.for-sell-box-main {
+                select {
+                    max-width: 96px;
+                    min-width: 96px;
+                    font-size: 12px;
+                }
+
+            }
+
+            &.typ-price-box {
+                flex-grow: 1;
+                select {
+                    max-width: 96px;
+                    min-width: auto;
+                    font-size: 12px;
+                }
+
+            }
+
+            &::after {}
+
+            select {
+
+
+                option {}
+            }
+
+            &:hover {
+
+
+                select {
+                    option {}
+                }
+            }
+        }
+
+        .filter-box {
+            display: none;
+
+            button {
+
+
+                .icon {
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+                button {}
+            }
+        }
+
+        .saved-box {
+            border: none;
+
+
+            button {
+                background: #0B5AA5;
+                border-radius: 500px;
+                color: #FFFFFF;
+                min-width: 104px;
+
+                .icon {
+                    display: none;
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+
+                button {}
+            }
+        }
+    }
+}
+
+@media (max-width: 389px) and (min-width: 360px) {
+    .bs-filter-box-wrapper {
+        grid-gap: 6px;
+
+        .search-box {
+            max-width: 284px;
+
+            .search-box-wrapper {
+
+
+                input {}
+
+                .button-wrapper {
+                    .clear-icon {
+                        .icon {
+                            &::before {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .for-sell-box {
+
+
+            &::after {}
+
+            select {
+
+
+                option {}
+            }
+
+            &:hover {
+
+
+                select {
+                    option {}
+                }
+            }
+        }
+
+        .filter-box {
+
+
+            button {
+
+
+                .icon {
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+                button {}
+            }
+        }
+
+        .saved-box {
+
+            button {
+
+
+                .icon {
+
+                    &::before {}
+                }
+            }
+
+            &:hover {
+
+                button {}
             }
         }
     }
