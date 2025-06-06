@@ -164,6 +164,7 @@
                                 font-size: 12px;
                                 font-weight: 500;
                                 text-align: left;
+
                                 &.active {
                                     color: $clr-white;
                                     background-color: #0B5AA5;
@@ -191,6 +192,11 @@
                 font-weight: 400;
                 color: #000000;
                 line-height: 1;
+                transition: ease .5s all;
+
+                &:hover {
+                    color: #0B5AA5;
+                }
             }
 
             .time {
@@ -199,6 +205,8 @@
                 color: #000000;
                 line-height: 1;
             }
+
+
         }
 
         .profile {
@@ -207,7 +215,7 @@
     }
 }
 
-@media (max-width:1281px) {
+@media (max-width:1366px) {
     .bs-header {
         .navbar {
             padding-top: 20.5px;
@@ -227,7 +235,7 @@
     }
 }
 
-@media (max-width:1281px) {
+@media (max-width:1366px) {
     .bs-header {
         .navbar {
             .navbar-brand {

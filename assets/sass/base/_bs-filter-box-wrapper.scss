@@ -147,8 +147,14 @@
     }
 }
 
+@media (max-width: 1400px) and (min-width: 1280px) {
+    .bs-filter-box-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width:1025px) {
-     .bs-filter-box-wrapper {
+    .bs-filter-box-wrapper {
         flex-wrap: wrap;
         justify-content: space-between;
 
@@ -173,7 +179,7 @@
 
         .for-sell-box {
 
-             &.typ-property-box {
+            &.typ-property-box {
                 display: none;
             }
 
@@ -183,6 +189,7 @@
 
             &.for-sell-box-main {
                 flex-grow: 2;
+
                 select {
                     max-width: 96px;
                     min-width: 96px;
@@ -193,6 +200,7 @@
 
             &.typ-price-box {
                 flex-grow: 2;
+
                 select {
                     max-width: 96px;
                     min-width: auto;
@@ -218,7 +226,8 @@
                 }
             }
         }
-         .filter-box-icon-mob {
+
+        .filter-box-icon-mob {
             display: block;
             position: relative;
 
@@ -283,7 +292,7 @@
 }
 
 @media (max-width:$mobile-breakpoint) {
-   
+
     .bs-filter-box-wrapper {
         flex-wrap: wrap;
 
@@ -350,6 +359,7 @@
 
             &.typ-price-box {
                 flex-grow: 1;
+
                 select {
                     max-width: 96px;
                     min-width: auto;

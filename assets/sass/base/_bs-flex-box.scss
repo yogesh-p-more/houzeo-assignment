@@ -14,11 +14,10 @@
     .rightBox {
         width: 100%;
         max-width: 706px;
-        height: calc(100vh - 151px);
         overflow-y: auto;
         overflow-x: hidden;
         padding: 24px 0;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
 
 
         .title {
@@ -76,12 +75,17 @@
         }
 
         .bs-grid-box{
-            // height: 2000px;
         }
 
         &::-webkit-scrollbar {
             display: none;
-            /* Chrome, Safari */
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1280px) {
+    .bs-flex-box {
+        .rightBox{
         }
     }
 }
@@ -97,7 +101,6 @@
         .rightBox {
             width: 100%;
             max-width: 706px;
-            height: calc(100vh - 216px);
             overflow-y: auto;
             overflow-x: hidden;
             padding: 24px 0;
