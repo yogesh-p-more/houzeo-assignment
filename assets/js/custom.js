@@ -113,3 +113,4 @@
       setTimeout(() => preloader.style.display = 'none', 500);
     }
   });
+

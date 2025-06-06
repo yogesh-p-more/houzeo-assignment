@@ -42,6 +42,7 @@
             grid-gap: 15px;
 
             .nav-item {
+                cursor: pointer;
                 &.active {
                     .nav-link {
                         color: #0B5AA5;
@@ -258,6 +259,7 @@
                         .nav-item {
                             width: 100%;
                             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                            flex-direction: column;
 
                             .nav-link {
                                 font-size: 16px;
@@ -287,6 +289,15 @@
 
                 .time {
                     font-size: 14px;
+                }
+            }
+
+            .navbar-nav {
+                .nav-item.dropdown {
+                    .dropdown-menu{
+                        width: 100%;
+                        border: none;
+                    }
                 }
             }
 

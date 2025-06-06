@@ -1,1 +1,116 @@
-function wow_js(){wow=new WOW({mobile:false,offset:5});wow.init()}function cardSlider(){const swiper=new Swiper(".card-slider",{loop:true,autoplay:{delay:4e3,disableOnInteraction:false},pagination:{el:".swiper-pagination",clickable:true},navigation:{nextEl:".custom-next",prevEl:".custom-prev"}})}(function($){"use strict";wow_js();cardSlider()})(jQuery);$(document).ready(function(){var headerHeight=$("#header").outerHeight();$(".header-height").css("margin-top",headerHeight+"px")});$(".clear-icon").on("click",function(){$(this).closest(".search-box-wrapper").find(".search-input").val("").focus()});function copySpacingFromContainer(){const container=document.querySelector(".container");const rightBox=document.querySelector(".rightBox");if(!container||!rightBox)return;if(window.innerWidth<=1024){rightBox.style.marginRight="";rightBox.style.paddingRight="";return}const styles=window.getComputedStyle(container);const marginRight=styles.marginRight;const paddingRight=styles.paddingRight;rightBox.style.marginRight=marginRight;rightBox.style.paddingRight=paddingRight}window.addEventListener("load",copySpacingFromContainer);window.addEventListener("resize",copySpacingFromContainer);function checkAndAddClass(){const element=document.querySelector(".custom-container");if(element&&window.innerWidth<=1023){element.classList.add("container")}else if(element){element.classList.remove("container")}}checkAndAddClass();window.addEventListener("resize",checkAndAddClass);window.addEventListener("load",function(){const preloader=document.getElementById("preloader");preloader.style.opacity="0";preloader.style.pointerEvents="none";setTimeout(()=>preloader.style.display="none",500)});$(document).ready(function(){function setRightBoxHeight(){const headerHeight=$("#header").outerHeight()||0;const barHeight=$(".typ-main-bar").outerHeight()||0;const totalHeight=headerHeight+barHeight;console.log(totalHeight);$(".rightBox").css("height",`calc(100dvh - ${totalHeight}px)`)}setRightBoxHeight();$(window).on("resize",setRightBoxHeight)});
+  // WOW.js Initialization (no jQuery)
+  function wow_js() {
+    const wow = new WOW({
+      mobile: false,
+      offset: 5,
+    });
+    wow.init();
+  }
+
+  // Swiper Initialization (no jQuery)
+  function cardSlider() {
+    new Swiper('.card-slider', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+    });
+  }
+
+  // DOMContentLoaded for general setup
+  document.addEventListener('DOMContentLoaded', function () {
+    wow_js();
+    cardSlider();
+
+    // Set margin-top of .header-height based on #header height
+    const header = document.getElementById('header');
+    const headerHeightEls = document.querySelectorAll('.header-height');
+    if (header) {
+      const headerHeight = header.offsetHeight;
+      headerHeightEls.forEach(el => {
+        el.style.marginTop = `${headerHeight}px`;
+      });
+    }
+
+    // Clear input text when clear icon is clicked
+    document.querySelectorAll('.clear-icon').forEach(icon => {
+      icon.addEventListener('click', () => {
+        const input = icon.closest('.search-box-wrapper')?.querySelector('.search-input');
+        if (input) {
+          input.value = '';
+          input.focus();
+        }
+      });
+    });
+
+    // Dynamic height calculation for rightBox
+    function setRightBoxHeight() {
+      const headerHeight = document.getElementById('header')?.offsetHeight || 0;
+      const barHeight = document.querySelector('.typ-main-bar')?.offsetHeight || 0;
+      const totalHeight = headerHeight + barHeight;
+
+      const rightBox = document.querySelector('.rightBox');
+      if (rightBox) {
+        rightBox.style.height = `calc(100dvh - ${totalHeight}px)`;
+      }
+    }
+
+    setRightBoxHeight();
+    window.addEventListener('resize', setRightBoxHeight);
+  });
+
+  // Copy spacing from .container to .rightBox
+  function copySpacingFromContainer() {
+    const container = document.querySelector('.container');
+    const rightBox = document.querySelector('.rightBox');
+
+    if (!container || !rightBox) return;
+
+    if (window.innerWidth <= 1024) {
+      rightBox.style.marginRight = '';
+      rightBox.style.paddingRight = '';
+      return;
+    }
+
+    const styles = window.getComputedStyle(container);
+    rightBox.style.marginRight = styles.marginRight;
+    rightBox.style.paddingRight = styles.paddingRight;
+  }
+
+  window.addEventListener('load', copySpacingFromContainer);
+  window.addEventListener('resize', copySpacingFromContainer);
+
+  // Toggle container class based on screen width
+  function checkAndAddClass() {
+    const element = document.querySelector('.custom-container');
+    if (!element) return;
+
+    if (window.innerWidth <= 1023) {
+      element.classList.add('container');
+    } else {
+      element.classList.remove('container');
+    }
+  }
+
+  window.addEventListener('load', checkAndAddClass);
+  window.addEventListener('resize', checkAndAddClass);
+
+  // Preloader fade-out
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.style.opacity = '0';
+      preloader.style.pointerEvents = 'none';
+      setTimeout(() => preloader.style.display = 'none', 500);
+    }
+  });
+

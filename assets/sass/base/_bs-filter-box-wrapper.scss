@@ -17,6 +17,11 @@
             background: #FFFFFF;
             padding: 6px 8px;
             border-radius: 100px;
+            transition: ease .5s all;
+
+            &:hover{
+                background: #f3f7fa;
+            }
 
             input {
                 padding: 2px 16px;
