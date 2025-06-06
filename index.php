@@ -65,11 +65,12 @@
           <div class="for-sell-box typ-price-box">
             <select class="select-field">
               <option value="" selected disabled>Price</option>
-              <option value="">100000</option>
-              <option value="">2000000</option>
-              <option value="">3000000</option>
-              <option value="">4000000</option>
+              <option value="100000">100,000</option>
+              <option value="2000000">2,000,000</option>
+              <option value="3000000">3,000,000</option>
+              <option value="4000000">4,000,000</option>
             </select>
+
           </div>
           <div class="for-sell-box typ-bed-box">
             <select class="select-field">

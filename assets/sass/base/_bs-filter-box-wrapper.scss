@@ -123,7 +123,7 @@
 
     .saved-box {
         border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
+        border-radius: 100px;
         transition: ease .5s all;
 
         button {
@@ -144,9 +144,11 @@
         &:hover {
             border: 1px solid rgba(11, 90, 165, 1);
             background: rgba(243, 247, 250, 1);
+            border-radius: 100px;
 
             button {
                 color: #0B5AA5;
+                background: transparent;
             }
         }
     }
@@ -272,7 +274,7 @@
         }
 
         .saved-box {
-            border: none;
+           border: 1px solid transparent;
 
 
             button {
