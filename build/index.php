@@ -65,11 +65,12 @@
           <div class="for-sell-box typ-price-box">
             <select class="select-field">
               <option value="" selected disabled>Price</option>
-              <option value="">100000</option>
-              <option value="">2000000</option>
-              <option value="">3000000</option>
-              <option value="">4000000</option>
+              <option value="100000">100,000</option>
+              <option value="2000000">2,000,000</option>
+              <option value="3000000">3,000,000</option>
+              <option value="4000000">4,000,000</option>
             </select>
+
           </div>
           <div class="for-sell-box typ-bed-box">
             <select class="select-field">
@@ -108,7 +109,7 @@
           <div class="leftBox">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d65587682.53044921!2d0!3d0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
